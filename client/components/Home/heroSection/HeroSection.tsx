@@ -2,21 +2,24 @@ import Link from 'next/link';
 import React from 'react'
 import { FaChevronRight } from "react-icons/fa";
 const HeroSection = () => {
-  return (
-    <div className='heroBg flex pt-[6rem] text-center flex-col  gap-5 font-extrabold items-center m-auto text-3xl md:text-5xl text-white  justify-center h-[97vh]  '> 
-    Share or discover <br/>the best  content
-    <Link href={'/blog'}>
-    <div className='p-3 text-xl px-8 rounded-full bg-green-750'>
-      Discover more
-    </div>
-    </Link>
-    <Link href={'/blog'}>
-    <span className='text-base gap-3 flex flex-row items-center font-medium'>
-      Visit Materials <FaChevronRight />
-    </span>
-    </Link>
-    </div>
-  )
+    return (
+        <div className='heroBg pt-[6rem] text-center gap-5 font-extrabold items-center m-auto text-white h-[97vh]  '>
+            <div className='hero-glass container content effect-circle flex flex-col items-center justify-center max-w-6xl mx-auto h-full rounded-xl px-4'>
+                <div className='text-3xl md:text-7xl font-bold'>Share or discover <br />the best  content</div>
+                <div className='text-lg mt-8 font-serif'>Gain in-demand, job-ready skills that employers value in the real world. With 80% of our graduates securing jobs in their desired fields within three months, join the 50,000+ students who have advanced their careers with TecSpire. Start your journey toward success today!</div>
+                <Link href={ '/blog' }>
+                    <div className='p-3 text-xl px-8 rounded-full bg-green-750 hover:underline underline-offset-2'>
+                        Discover more
+                    </div>
+                </Link>
+                <Link href={ '/blog' }>
+                    <span className='text-base gap-3 flex flex-row items-center font-medium text-blue-500'>
+                        Visit Materials <FaChevronRight />
+                    </span>
+                </Link>
+            </div>
+        </div>
+    )
 }
 
 export default HeroSection
