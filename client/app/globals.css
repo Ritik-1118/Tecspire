@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-image: url('../public/assets/photo-1651352076676-58a34812f3d2.avif');
+}
+.heroBg{
+  background-image: url('../public/assets/photo-1655841439659-0afc60676b70.avif'); 
+  height: 100vh;
+  background-color: #141A28;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+}
+.glass_effect{
+background: rgba(61, 60, 60, 0.148);
+border-radius: 5px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(12.3px);
+-webkit-backdrop-filter: blur(12.3px);
+border: 0.5px solid rgba(255, 255, 255, 0.14);
+}
+.glass_effect2{
+  background: rgba(61, 60, 60, 0.148);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.3px);
+  -webkit-backdrop-filter: blur(12.3px);
+  border: 0.5px solid rgba(255, 255, 255, 0.14);
+  }
+  
