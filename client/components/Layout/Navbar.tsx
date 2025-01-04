@@ -17,12 +17,12 @@ const Navbar = () => {
 
 
     return (
-        <nav className='w-full z-50 p-4 shadow-sm shadow-slate-500 fixed  font-medium text-white glass_effect'>
+        <nav className='w-full z-50 px-5 shadow-sm shadow-slate-500 fixed  font-medium text-white glass_effect'>
             <div className='container mx-auto flex justify-between items-center'>
                 <Link href={ '/' }>
-                    <div className='text-lg font-semibold italic hover:text-green-750 flex items-center'>
-                        <img src='/assets/icon.svg' className='w-10' alt='Logo' />
-                        TecSpire
+                    <div className='text-lg font-semibold italic hover:text-green-750 flex items-end h-full'>
+                        <img src='/assets/logo.png' className='w-16' alt='Logo' />
+                        <span className='text-3xl mb-2 font-bold'>TECSPIRE</span>
                     </div>
                 </Link>
 

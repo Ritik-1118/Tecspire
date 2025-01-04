@@ -1,12 +1,14 @@
 import HeroSection from "@/components/Home/heroSection/HeroSection";
 import { WhatWeOffer } from "@/components/Home/WhatWeOffer";
+import Footer from "@/components/Layout/Footer";
 import Image from "next/image";
 
-export default function Home() {
-  return (
-    <>
-    <HeroSection/>
-    <WhatWeOffer />
-    </>
-  );
+export default function Home () {
+    return (
+        <>
+            <HeroSection />
+            <WhatWeOffer />
+            <Footer />
+        </>
+    );
 }
