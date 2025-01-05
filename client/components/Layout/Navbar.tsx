@@ -35,20 +35,20 @@ const Navbar = () => {
                 <div className='hidden md:flex gap-8 items-center'>
                     <Link href='/' className='hover:text-green-750 flex items-center'>Home</Link>
                     <Link href='/about' className='hover:text-green-750 flex items-center'>About</Link>
-                    <Link href='' className='hover:text-green-750 flex items-center'>Contact</Link>
+                    <Link href='' className='hover:text-green-750 flex items-center'>Contact Us</Link>
                 </div>
 
             </div>
 
             <div
                 className={ `fixed top-0 right-0 h-[100vh] glass_effect text-white w-64 transform transition-transform duration-700 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'
-                    } md:hidden  flex flex-col gap-8 p-8` }
+                    } md:hidden  flex flex-col gap-8` }
             >
                 <div className='text-lg font-semibold flex-row w-full justify-between italic  flex items-center'>
-                    <span className='flex flex-row items-center'>
-                        <img src='/assets/icon.svg' className='w-10' alt='Logo' />
-                        TecSpire
-                    </span>
+                    <div className='flex flex-row items-center'>
+                        <img src='/assets/logo.png' className='w-16' alt='Logo' />
+                        <span className='text-3xl font-bold'>TECSPIRE</span>
+                    </div>
                     <span
                         onClick={ toggleMenu }
                         className={ `hover:text-green-750 cursor-pointer transition-transform duration-200 ${isOpen ? 'rotate-180' : 'rotate-0'
@@ -59,7 +59,7 @@ const Navbar = () => {
                 </div>
                 <Link href='/' className='hover:text-green-750 justify-center  w-full items-center text-center' onClick={ toggleMenu }>Home</Link>
                 <Link href='/about' className='hover:text-green-750 justify-center  w-full items-center text-center' onClick={ toggleMenu } >About</Link>
-                <Link href='' className='hover:text-green-750 justify-center  w-full items-center text-center' onClick={ toggleMenu } >Contact</Link>
+                <Link href='' className='hover:text-green-750 justify-center  w-full items-center text-center' onClick={ toggleMenu } >Contact Us</Link>
 
             </div>
         </nav>
