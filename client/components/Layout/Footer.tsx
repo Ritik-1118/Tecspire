@@ -60,7 +60,7 @@ const Footer = () => {
                         <ul className="space-y-2">
                             <li className="flex items-center">
                                 <FaMapMarkerAlt className="mr-2" />
-                                DLF Forum, Cybercity, Phase III, Gurugram, Haryana 122002
+                                Infinity Tower, Tech Park, Sector 21, Noida, Uttar Pradesh 201301
                             </li>
                             <li className="flex items-center">
                                 <FaPhoneAlt className="mr-2" />
