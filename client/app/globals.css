@@ -2,15 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+/* body{
   background-image: url('../public/assets/photo-1651352076676-58a34812f3d2.avif');
-}
+} */
 .heroBg{
   background-image: url('../public/assets/photo-1655841439659-0afc60676b70.avif'); 
   height: 100vh;
   background-color: #141A28;
   background-size: cover;
-  /* background-repeat: no-repeat; */
 }
 .glass_effect{
 background: rgba(61, 60, 60, 0.148);
@@ -37,4 +36,18 @@ border: 0.5px solid rgba(255, 255, 255, 0.14);
     border: 1px solid rgba(255, 255, 255, 0.018);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+}
+
+
+@keyframes down-up {
+    0%, 100% {
+            transform: translateY(0);
+    }
+    50% {
+            transform: translateY(20px);
+    }
+}
+
+.down-up {
+    animation: down-up 2s infinite;
 }

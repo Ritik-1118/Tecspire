@@ -1,12 +1,21 @@
+import ExploreDomains from '@/components/Internship/ExploreDomains';
+import { InternHero } from '@/components/Internship/InternHero';
+import InternshipRoadmap from '@/components/Internship/InternshipRoadmap';
+import { WhyChooseUs } from '@/components/Internship/WhyChooseUs';
+import Link from 'next/link';
 import * as React from 'react';
+import { FaDownLong } from 'react-icons/fa6';
 
 export interface IAppProps {
 }
 
 export default function App (props: IAppProps) {
     return (
-        <div className="min-h-screen bg-gradient-to-t from-[#0A0A0A] via-[#050603] to-[#09120E] text-white  flex flex-col items-center justify-center">
-            <h1 className="text-4xl font-bold">Internship Page</h1>
-        </div>
+        <>
+            <InternHero />
+            <WhyChooseUs />
+            <ExploreDomains />
+            <InternshipRoadmap />
+        </>
     )
 }
