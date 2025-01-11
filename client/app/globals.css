@@ -53,3 +53,15 @@ border: 0.5px solid rgba(255, 255, 255, 0.14);
 }
 
  
+
+
+.scrollbar-hide {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+
+    /* For Webkit-based browsers */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
